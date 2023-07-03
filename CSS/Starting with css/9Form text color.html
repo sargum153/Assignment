@@ -1,0 +1,78 @@
+Creat a web page with registation form using the css attribute selecter change the text color of each input field to any other 
+color
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+/* this isi called attribute selector- [type="text"] */
+
+        input[type="text"] {
+  border: 2px solid blue;
+  padding: 5px;
+  color: red;
+}
+    input[type="email"] {
+        border: 2px solid #ff00a2;
+    padding: 5px;
+    color: #3cff00;
+    }
+    input[type="password"] {
+        border: 2px solid red;
+        padding: 5px;
+        color: chartreuse;
+    }
+    input[type="checkbox"] {
+        accent-color: red;
+        
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Register your details</h1>
+        <form id="registration-form">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" > <br>
+      
+        <label for="email">email address</label><br>
+        <input type="email" id="email" ><br>
+      
+        <label for="password">password</label><br>
+        <input type="password" id="password" ><br>
+
+
+        <input type="checkbox" name="checked" id="checkbox"> 
+        <label for="checkbox">checkbox</label> <br>
+        
+      
+        <button type="submit">checkEox</button><br>
+
+        </form>  
+    </div>
+</body>
+</html>
+
+
+
+
+<!-- this isi called attribute selector- [type="text"]
+
+also like this-
+
+input[type="text"] {
+  color: blue;
+}
+
+input[type="email"] {
+  color: green;
+}
+
+input[type="password"] {
+  color: purple;
+} -->

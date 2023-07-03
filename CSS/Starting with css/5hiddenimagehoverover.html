@@ -1,0 +1,32 @@
+Craet an web page with an image taht is hidden until it is hovered over. use a heading above the image that
+ says hover below to revel asurprise
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 500px;
+        }
+        img{
+            opacity: 0;
+          width: 100%;
+
+        }
+        img:hover{
+           opacity: 1;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover </h1>
+    <div class="container"><img src="../../image/R.jpg" alt=""></div>
+    
+</body>
+</html>

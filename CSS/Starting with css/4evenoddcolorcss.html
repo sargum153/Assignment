@@ -1,0 +1,33 @@
+<!-- Creat a web page with a list of tech stacks involved in full-stack web development where the even number items have adifferent 
+background color then the odd-numbered to yellow. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 10px;
+    }
+
+    li:nth-child(even) {
+      background-color: lightgray;
+    }
+    li:nth-child(odd) {
+      background-color: red;
+    }
+
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Front-end Development</li>
+    <li>Back-end Development</li>
+    <li>Database Management</li>
+  </ul>
+</body>
+</html>
