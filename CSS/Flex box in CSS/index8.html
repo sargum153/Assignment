@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Z-Index</title>
+    <style>
+        .container{
+            height: 700px;
+            width: 90%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 5px solid #f6f5f2;
+            position: relative;
+            margin-left: -50px;
+        }
+        .img-1{
+            z-index: 4;
+        }
+        .img-2{
+            z-index: 3;
+        }
+        .img-3{
+            z-index: 2;
+        }
+        .img-4{
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img img-1" src="https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg" alt="img-1">
+        <img class="img img-2" src="https://res.cloudinary.com/crunchbase-production/image/upload/c_thumb,h_170,w_170,f_auto,g_faces,z_0.7,b_white,q_auto:eco,dpr_1/smokhfs2uevnppc2bmwl" alt="img-2">
+        <img class="img img-3" src="https://leerob.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.b1d1472f.jpg&w=256&q=75" alt="img-3">
+        <img class="img img-4" src="https://nextjs.org/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F35255%2F1665059775-delba.jpg&w=640&q=75" alt="img-4">
+    </div>
+</body>
+</html>
