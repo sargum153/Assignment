@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            border: 3px solid black;
+            width: 1200px;
+        }
+        .content-1{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            
+        }
+        .icon{
+            height: 50px;
+            width: 50px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .anchor{
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+            margin-top: 10px;
+        }
+        .button-1 button{
+            width: 150px;
+            height: 30px;
+            margin-top: 8px;
+            position: relative;
+            background-color: #68df9e;
+            border: 0;
+            border-radius: 5px;
+        }
+        .login-button{
+            margin-right: -60px;
+            position: absoute;
+            right: -240px;
+        }
+
+        .container-2{
+            display: flex;
+            /* grid-template-columns: 1fr 1fr; */
+            justify-content: space-between;
+            margin-right: 10px;
+            align-items: center;
+            /* width: 800px; */
+
+        }
+        .logo-2{
+            height: 500px;
+            width: 300px; 
+            border-right: 100px solid yellow;   
+        }
+        .button-2{
+            width: 150px;
+            height: 30px;
+            background-color: black;
+            color: white;
+            margin-top: 30px;
+        }
+        .content-3{
+            position: relative;
+        }
+        .content-2{
+        padding: 20px;
+        width: 60%;
+      }
+
+      .container-3{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* align-items: center; */
+        background-color: #2b1e16;
+        margin: auto;
+        /* justify-content: space-around; */
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+
+      .logo-3{
+        height: 200px;
+        width: 100px;
+        margin-top: 10px;
+      }
+
+      .content-2{
+        
+        
+      }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content-1">
+            <div class="img-1">
+                <img src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-healthy-food-logo-design-with-chopstick-png-image_9016805.png" class="icon" alt="logo">
+            </div>
+            <div class="anchor">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="button-1">
+                <button class="login-button">Login</button>
+            </div>
+        </div>
+        <div class="container-2">
+            <div class="content-2">
+                <h2>Healthy Food</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt quasi labore unde eligendi reiciendis eaque qui. Harum laudantium vel incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint possimus quia cupiditate illum accusamus neque sapiente repellendus modi, itaque molestias magnam reiciendis delectus ipsa mollitia, nihil natus sit. Reiciendis non aliquid natus sit dignissimos tenetur. Iste, fugit vel numquam odio. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button class="button-2">Read More</button>
+            </div>
+            <div class="content-3">
+                <img src="https://media.istockphoto.com/id/870173346/photo/healthy-food.jpg?s=612x612&w=0&k=20&c=g6ewhe862ZaSQevMw7VS-VJzwXXEHL6Gqpr-fEDx0jY=" class="logo-2" alt="">
+            </div>
+        </div>
+        <section class="container-3">
+            <div class="sub-section-1">
+                <img class="logo-3" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf" alt="">
+                <h3>No Minimum Order</h3>
+                <p>Order in for your or for the group, <br>with no restrictions on order value</p>
+            </div>
+            <div class="sub-section-2">
+                <img class="logo-3" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_224,h_412/4x_Live_order_zzotwy" alt="">
+                <h3>Live Order Tracking</h3>
+                <p>Know where your order is at all times, <br>from the restaurant to your
+                    doorstep</p>
+            </div>
+            <div class="sub-section-3">
+                <img class="logo-3" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_248,h_376/4x_-_Super_fast_delivery_awv7sn" alt="">
+                <h3>Lightning-Fast Delivery</h3>
+                <p>Experience Swiggy's superfast delivery <br> for food delivered fresh & on time</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
