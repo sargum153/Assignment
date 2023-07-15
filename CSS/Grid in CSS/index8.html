@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            height: 700px;
+            width: 800px;
+            background-color: black;
+            border-radius: 20px;
+        }
+        h1{
+            font-size: 30px;
+            font-weight: normal;
+            color: aliceblue;
+            padding: 10px 10px;
+        }
+        .grid-items{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 20px;
+            gap: 40px;
+            margin-left: 10px;
+        }
+        .grid-item {
+            border-radius: 10px;
+            border: 1px solid white;
+            height: 250px;
+            width: 150px;
+            font-size: 25px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .grid-item-1{
+            background-color: #8D3DAF;
+        }
+        .grid-item-2{
+            background-color: #E07C24;
+        }
+        .grid-item-3{
+            background-color: #758283;
+        }
+        .grid-item-4{
+            background-color: #E03B8B;
+        }
+        .grid-item-5{
+            background-color: #FF6666;
+        }
+        .grid-item-6{
+            background-color: #03C6C7;
+        }
+        .grid-item-7{
+            background-color: #CAD5E2;
+        }
+        .grid-item-8{
+            background-color: #35BDD0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Feeling Fancy</h1>
+        <div class="grid-items">
+            <div class="grid-item grid-item-1">#8D3DAF</div>
+            <div class="grid-item grid-item-2">#E07C24</div>
+            <div class="grid-item grid-item-3">#758283</div>
+            <div class="grid-item grid-item-4">#E03B8B</div>
+            <div class="grid-item grid-item-5">#FF6666</div>
+            <div class="grid-item grid-item-6">#03C6C7</div>
+            <div class="grid-item grid-item-7">#CAD5E2</div>
+            <div class="grid-item grid-item-8">#35BDD0</div>
+        </div>
+    </div>
+</body>
+</html>
