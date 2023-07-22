@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <style>
+      /* style large-screen */
+      .large-screen {
+        background-color: #111010eb;
+        height: 50px;
+        
+        /* display: grid; */
+        /* grid-template-columns: repeat(3, 1fr);
+        position: absolute; */
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .large-screen img {
+        height: 40px;
+        width: 40px;
+        margin-left: 10px;
+        margin-top: 5px;
+      }
+      .large-screen button {
+        background-color: #1c1ce9;
+        color: white;
+        height: 30px;
+        width: 100px;
+        border-radius: 5px;
+        margin-top: 10px;
+        /* right: -350px; */
+        border: 0;
+        position: relative;
+      }
+      .nav_link > a {
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+      }
+      .nav_link {
+        margin-top: 10px;
+      }
+
+      .menu {
+        display: none;
+      }
+      /* large-screen style end */
+
+      @media screen and (max-width: 611px) {
+        .nav_link {
+          display: none;
+        }
+        .large-screen button {
+          display: none;
+        }
+        .menu {
+          display: block;
+          float: right;
+          margin-top: 15px;
+          cursor: pointer;
+          /* color: #fff; */
+        }
+        i.fa-bars{
+          color: white;
+          transition: color;
+        }
+        i.fa-bars:hover {
+          color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <section class="large-screen">
+        <img
+          src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png"
+          alt="logo"
+        />
+        <div class="nav_link">
+          <a href="#">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <button>Login</button>
+        <div class="menu">S
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </section>
+
+      
+    </nav>
+  </body>
+</html>

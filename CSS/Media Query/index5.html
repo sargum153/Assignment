@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container > h2 {
+        text-align: center;
+        text-decoration: underline;
+      }
+      
+      img {
+        height: 250px;
+        width: 100%;
+        padding: 2px;
+        border: 2px solid black;
+        border-radius: 20px;
+      }
+      .img-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+      }
+      @media screen and (max-width: 600px){
+        .img-container{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Random Images</h2>
+      <div class="img-container">
+        <img
+          src="https://images.pexels.com/photos/34299/herbs-flavoring-seasoning-cooking.jpg?auto=compress&cs=tinysrgb&w=800"
+          alt="img-1"
+        />
+        <img
+          src="https://images.pexels.com/photos/276267/pexels-photo-276267.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="img-2"
+        />
+        <img
+          src="https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="img-3"
+        />
+        <img
+          src="https://images.pexels.com/photos/7256897/pexels-photo-7256897.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="img-4"
+        />
+        <img
+          src="https://images.pexels.com/photos/7256897/pexels-photo-7256897.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="img-5"
+        />
+        <img
+          src="https://images.pexels.com/photos/4614204/pexels-photo-4614204.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="img-6"
+        />
+      </div>
+    </div>
+  </body>
+</html>

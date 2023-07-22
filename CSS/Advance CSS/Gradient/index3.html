@@ -1,0 +1,75 @@
+<!-- using transform -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Note</title>
+    <style>
+        .container{
+            margin: 200px;
+            margin-top: 200px;
+            border: 2px solid black;
+            height: 400px;
+            width: 500px;
+            cursor: pointer;
+            background-image: linear-gradient(to left, #8652df, #5fb5e0);
+            
+        }
+        .container:hover{
+            transform: rotate(-45deg);
+        }
+        .content-1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+        }
+        .content-1 > h2 {
+            margin-left: 8%;
+        }
+        .content-1 > p{
+            margin-right: 10%;
+            color: #fff;
+        }
+        .content-2 > h2{
+            margin-left: 10%;
+        }
+        .content-2 > ul{
+            margin-left: 15%;
+        }
+        .content-3{
+            display: flex;
+            justify-content: center;
+        }
+        button{
+            height: 50px;
+            width: 80%;
+            background-image: linear-gradient(to left, #9eefc9, #c6f6c6);
+            font-weight: bold;
+            font-size: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content-1">
+            <h2>#01</h2>
+            <p>Created On: 01/01/2023</p>
+        </div>
+        <div class="content-2">
+            <h2>Important dates</h2>
+            <ul>
+                <li>January 26-Republic Day</li>
+                <li>August 15-Independence Day</li>
+                <li>Gandhi Jayanti</li>
+                <li>National Sports Day</li>
+            </ul>
+        </div>
+        <div class="content-3">
+                <button>Mark As Done</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <style>
+      .container-3 {
+        background-color: black;
+        height: 400px;
+        text-align: center;
+      }
+      .container-3 > h2 {
+        color: #1c1ce9;
+        /* padding: 40px; */
+        font-size: 50px;
+        margin-top: 40px;
+      }
+      .container-3 > h3 {
+        color: aliceblue;
+        font-size: 30px;
+      }
+
+      /* Q-2 end */
+      h1,
+      h3 {
+        margin: 0px;
+      }
+      /* style large-screen */
+      .large-screen {
+        background-color: #111010eb;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .large-screen img {
+        height: 40px;
+        width: 40px;
+        margin-left: 10px;
+        margin-top: 5px;
+      }
+      .large-screen button {
+        background-color: #1c1ce9;
+        color: white;
+        height: 30px;
+        width: 100px;
+        border-radius: 5px;
+        margin-top: 10px;
+        border: 0;
+        position: relative;
+      }
+      .nav_link > a {
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+      }
+      .nav_link {
+        margin-top: 10px;
+      }
+
+      .menu {
+        display: none;
+      }
+      /* Q-1 style end */
+
+      /* Q-2 start */
+      .container_2 {
+        display: flex;
+        justify-content: space-around;
+      }
+      .sponcsor-logo {
+        width: 60%;
+        height: 250px;
+        margin-left: 30px;
+      }
+      video {
+        width: 40%;
+        margin-right: 50px;
+      }
+      .text-section > h3 {
+        margin-top: 80px;
+        margin-left: 30px;
+      }
+      .text-section > h1 {
+        font-size: 40px;
+        margin-left: 30px;
+        color: #52d2fd;
+      }
+      .text-section > h4 {
+        margin-left: 30px;
+        color: #52d2fd;
+      }
+      .text-section > p {
+        margin-left: 30px;
+      }
+
+      @media screen and (max-width: 611px) {
+        .nav_link {
+          display: none;
+        }
+        .large-screen button {
+          display: none;
+        }
+        .container_2 {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+        }
+        .menu {
+          display: block;
+          float: right;
+          margin-top: 15px;
+          cursor: pointer;
+        }
+        i.fa-bars {
+          color: white;
+          transition: color;
+        }
+        i.fa-bars:hover {
+          color: red;
+        }
+        .container-3 {
+          background-color: #fff;
+        }
+        .container-3 > h3 {
+          color: black;
+          font-weight: normal;
+        }
+        .container-3 > h2 {
+          font-size: 40px;
+          font-weight: bold;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <section class="large-screen">
+        <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="" />
+        <div class="nav_link">
+          <a href="#">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <button>Login</button>
+        <div class="menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </section>
+    </nav>
+
+    <main class="container_2">
+      <section class="text-section">
+        <h3>Say Hi To</h3>
+        <h1>One Card</h1>
+        <h4>Co-branded Card Issuers :</h4>
+        <div class="sponcsor_img">
+          <img
+            class="sponcsor-logo"
+            src="https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png"
+            alt=""
+          />
+        </div>
+        <p>
+          India's best metal credit card. Built with full-stack tech. Backed by
+          the <br />
+          principles of simplicity, transparency, and giving back control to the
+          user.
+        </p>
+      </section>
+      <video
+        src="https://www.getonecard.app/images/say_hi_2x_d3_.mp4"
+        autoplay="autoplay"
+      ></video>
+    </main>
+    <div class="container-3">
+      <h2>No Hidden Fees Ever</h2>
+      <h3>No Joining Fees.</h3>
+      <h3>No Annual Fees.</h3>
+      <h3>No Rewards Redemption Fees.</h3>
+    </div>
+  </body>
+</html>
